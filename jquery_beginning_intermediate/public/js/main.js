@@ -53,7 +53,14 @@
     }
   };
 
-  // Intrusive solutions have been commented out. Uncomment to trigger.
+  var questionNine = {
+    questionLineOne: "Create a test that asks three questions through dialog boxes.  If the test taker answers correctly, notify them with a dialog box that says \"Correct\"; otherwise, notify them with a dialog box that says \"Incorrect, there are XX moons\".  Here are the questions and answers:How many moons does Earth have? 1",
+    questionLineTwo: "How many moons does Saturn have? 31",
+    quetsionLineThree: "How many moons does Venus have? 0"
+  };
+
+  // Intrusive solutions have been commented out allowing one to
+  // trigger each individually.
 
   questionOne();
   // questionTwo();
@@ -63,5 +70,6 @@
   questionSix();
   questionSeven();
   questionEight.print("Hello question eight!");
+  questionNine();
 
 })(jQuery);
