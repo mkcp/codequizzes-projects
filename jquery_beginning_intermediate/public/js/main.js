@@ -39,6 +39,20 @@
     });
   };
 
+  var questionSeven = function() {
+    var date = new Date();
+    var day = date.getDate();
+    var month = date.getMonth() + 1;
+    var year = date.getFullYear();
+    $(".question-seven").text(month + '/' + day + '/' + year);
+  };
+
+  var questionEight = {
+    print: function(string) {
+      $('.question-eight').text(string);
+    }
+  };
+
   // Intrusive solutions have been commented out. Uncomment to trigger.
 
   questionOne();
@@ -47,5 +61,7 @@
   questionFour();
   // questionFive();
   questionSix();
+  questionSeven();
+  questionEight.print("Hello question eight!");
 
 })(jQuery);
