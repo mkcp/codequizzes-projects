@@ -1,0 +1,12 @@
+{
+  "name": "codequizzes-jquery-1",
+  "version": "0.0.0",
+  "description": "http://www.codequizzes.com/topics/2/quizzes/3",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "author": "",
+  "license": "BSD"
+}
