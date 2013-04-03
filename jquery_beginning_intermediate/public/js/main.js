@@ -1,9 +1,11 @@
 (function($) {
 
+  // One object per question.
+
   var questionOne = function() {
     var a = 3,
         b = 5;
-    document.write("<p>" + (a + b) + "</p>");
+    $('.question-one').text(a+b);
   };
 
   var questionTwo = function() {
@@ -11,7 +13,7 @@
   };
 
   var questionThree = function() {
-    document.write("<p>Hello World!</p>");
+    $('.question-three').text("Hello World!");
   };
 
   var questionFour = function() {
@@ -22,13 +24,28 @@
 
   var questionFive = function() {
     var name = prompt("What is your name?", "Enter name here");
-    document.write("<p>Hello " + name + ".</p>");
+    $('.question-five').text("Hello " + name + ".");
   };
 
+  var questionSix = function() {
+    var economists = [
+      "Taylor",
+      "Mankiw",
+      "Roubini",
+      "Krugman"
+    ];
+    $.each(economists, function(index, economist) {
+      $(".question-six").append("<li>" + economist + "</li>");
+    });
+  };
+
+  // Intrusive solutions have been commented out. Uncomment to trigger.
+
   questionOne();
-  questionTwo();
+  // questionTwo();
   questionThree();
   questionFour();
-  questionFive();
+  // questionFive();
+  questionSix();
 
 })(jQuery);
